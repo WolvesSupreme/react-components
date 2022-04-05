@@ -1,0 +1,109 @@
+.services {
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    margin-top: 80px;
+    //margin-right: -3px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  &__subtitle {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    color: $a;
+    padding: 5px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 10rem;
+      height: 0.1rem;
+      background-color: $black;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2rem;
+    }
+  }
+
+  &__descripcion {
+    text-align: center;
+    font-size: 1.3rem;
+    color: $silver;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    width: 50%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 25px;
+  }
+}
+
+.wrapper-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-content: center;
+  grid-gap: 1.5rem;
+  margin: 50px 0 50px 80px;
+  .services-container {
+    overflow: hidden;
+    width: 28rem;
+    box-shadow: 0.5rem 0.5rem 3rem #b0bec5;
+    background-color: $white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .banner {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+  }
+
+  .services-banner {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid $white;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 4.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+  }
+
+  .services-btn {
+    cursor: pointer;
+    width: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $white;
+    padding: 1rem;
+    background-color: #651fff;
+  }
+}

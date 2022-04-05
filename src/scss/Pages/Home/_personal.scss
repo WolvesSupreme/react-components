@@ -1,0 +1,146 @@
+.personal {
+  padding-top: 5px;
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    margin-top: 50px;
+    //margin-right: -3px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  &__subtitle {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    color: $a;
+    padding: 5px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 10rem;
+      height: 0.1rem;
+      background-color: $black;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2rem;
+    }
+  }
+  &__texto {
+    text-align: center;
+    font-size: 1.3rem;
+    color: $silver;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    width: 50%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 25px;
+  }
+}
+.wrapper-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+  margin: 50px 0 50px 60px;
+  .containers {
+    overflow: hidden;
+    width: 32rem;
+    box-shadow: 0.5rem 0.5rem 3rem #b0bec5;
+    text-align: center;
+    background-color: #ebeef8;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  }
+  .profiles-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+  }
+  .name-box {
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+  }
+
+  .descripcion {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+  }
+  button {
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0.5rem 0.5rem 2rem;
+    }
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+  .socials-media {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+    li {
+      font-size: 3rem;
+      a {
+        color: #445ae3;
+      }
+    }
+  }
+}

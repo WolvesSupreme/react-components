@@ -1,0 +1,27 @@
+@media screen and (max-width: 1068px) {
+  .abouts-post {
+    max-width: 80rem;
+  }
+  .abouts-banner-images {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .abouts-post {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .abouts-post {
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+  .abouts-banner-images {
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
+}

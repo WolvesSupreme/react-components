@@ -1,0 +1,57 @@
+.contenedor-sobre-nosotros {
+  display: flex;
+  width: 80%;
+  padding: 0 0 30px 300px;
+  justify-content: space-evenly;
+}
+.image-about-us {
+  width: 50%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background: fixed;
+}
+.sobre-nosotros {
+  .contenido-textos {
+    width: 48%;
+    &__title {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 2.5rem;
+    }
+    &__parrafos {
+      color: $silver;
+      text-align: justify;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.contenido-icons {
+  display: block;
+
+  &__inscripción {
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:hover{
+      color: $a;
+    }
+
+    &__img {
+      margin-right: 30px;
+      margin-top: 10px;
+      width: 40px;
+    }
+  }
+  &__artículo {
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+}

@@ -1,0 +1,67 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  @include bgImage("../../../public/images/img-2.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  @include flexCenter;
+  background: cover;
+  color: $black;
+
+  &__content {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+
+    &-links a {
+      text-decoration: none;
+      color: $white;
+      margin-left: 15px;
+      font-size: 1.9rem;
+      text-transform: uppercase;
+    }
+
+    &-span {
+      display: inline-block;
+      height: 20px;
+      width: 5px;
+      background: $white;
+      margin-left: 20px;
+      transform: rotate(10deg);
+    }
+  }
+
+  &__content-h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-weight: 600;
+    color: $a;
+    white-space: nowrap;
+  }
+
+  &__content-p {
+    margin-bottom: 20px;
+    font-size: 10rem;
+    position: absolute;
+    transform: translateY(-10%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    color: $white !important;
+  }
+
+  &__button{
+    margin-top: 400px;
+  }
+}
+

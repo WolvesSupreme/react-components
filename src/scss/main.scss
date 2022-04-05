@@ -1,0 +1,40 @@
+// import base
+@import "base/base";
+
+// import abstracts
+@import "abstracts/colors";
+@import "abstracts/mixins";
+
+// import sections
+@import "sections/navbar";
+@import "sections/footer";
+@import "sections/slider";
+
+// import Pages / Home
+@import "Pages/Home/principal";
+@import "Pages/Home/abouts";
+@import "Pages/Home/cuarto";
+@import "Pages/Home/horario";
+@import "Pages/Home/services";
+@import "Pages/Home/personal";
+//@import 'Pages/Home/prueba';
+
+// import Pages
+@import "Pages/contact";
+
+// import buttons
+@import "buttons/flotante";
+@import "buttons/primario";
+@import "buttons/secundario";
+
+// import Components - Tittle
+@import "components/title";
+
+// import responsive
+@import "responsive/media";
+@import "responsive/cards";
+@import "responsive/services";
+@import "responsive/about";
+
+// import animation
+@import "animation/animation";
